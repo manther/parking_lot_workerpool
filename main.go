@@ -28,7 +28,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("input", input)
 
 	input = strings.TrimSuffix(input, "\n")
 	input = strings.ToLower(input)
@@ -66,7 +65,6 @@ func main() {
 
 	// App Driver
 	// Check compact number
-	fmt.Println("compactnum", CompactNum)
 	if CompactNum > 1 {
 		errs := sp.ManageGroupParkComp(CompactNum)
 		for _, err := range errs {
